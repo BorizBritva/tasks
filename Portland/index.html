@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop equipment</title>
+    <meta name="description" content="Modern appliances at a good price. Take a lot-pay a little!">
+    <meta name="keywords" content="IPhone, Samsung, JBL, watch, smartphone, TV, apple, galaxy, discount">
+    <script src="https://use.fontawesome.com/ed22734cc3.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+<header class="mainHead">
+    <div class="container mainHead_menu">
+        <div class="burgerMenu">
+            <img src="src/assest/images/site_elem/menu_icon.png" alt="Menu-Icon">
+        </div>
+        <span class="logo">
+            <!-- По идее, должна быть ссылка (дополнительный тег <a></a>), но пока нет необходимости -->
+            <img src="src/assest/images/menu_logo.png" alt="Portland-Logo">
+        </span>
+        <nav class="mainHead_nav">
+            <ul>
+                <li class="mainHead_nav__item"><a href="">Home</a></li>
+                <li class="mainHead_nav__item"><a href="">Devices</a></li>
+                <li class="mainHead_nav__item"><a href="">Delivery <span>&amp;</span> Payment</a></li>
+                <li class="mainHead_nav__item"><a href="">Guarantee</a></li>
+                <li class="mainHead_nav__item"><a href="">About Us</a></li>
+            </ul>
+            <div class="cartWrap">
+                <div class="cartWrap_icon"><img src="src/assest/images/site_elem/cart_icon.png" alt=""></div>
+                <span>Cart</span>
+            </div>
+            <div class="mainHead_signButton">
+                <input type="submit" value="SIGN IN" class="signSubmit">
+            </div>
+        </nav>
+    </div>
+    <section class="sliderSec">
+        <div class="container">
+            <nav class="bottomMenu">
+                <ul>
+                    <li class="bottomMenu__item"><a href="">top sales</a></li>
+                    <li class="bottomMenu__item"><a href="">brand focus</a></li>
+                    <li class="bottomMenu__item"><a href="">hi-tech</a></li>
+                    <li class="bottomMenu__item"><a href="">best sellers</a></li>
+                    <li class="bottomMenu__item"><a href="">projects</a></li>
+                </ul>
+                <form action="" name="searchform" method="post" class="headSearch">
+                    <span class="buttonSupport"><input type="submit" value="support"></span>
+                    <div class="search_icon"><img src="src/assest/images/site_elem/search_icon.png" alt="search_icon"><input value="I`am looking for..." type="text"></div>
+                </form>
+            </nav>
+        </div>
+        <section class="sliderSec_slider">
+            <div class="container sliderWrap"></div>
+        </section>
+    </section>
+</header>
+<div class="container">
+    <section class="sortSec">
+        <form class="sortSecForm" action="" method="post">
+            <div class="sortBy">
+                <label class="sortParam">sort by:
+                    <select class="sortBylist">
+                        <option value="Best Match">Best Match</option>
+                        <option value="Expensive">Expensive</option>
+                        <option value="Cheap">Cheap</option>
+                        <option value="Flagman">Flagman</option>
+                    </select>
+                </label>
+            </div>
+            <div class="sortKeyWord">
+                <label class="sortParam">keywords
+                    <input type="text" value="Tablet">
+                </label>
+            </div>
+            <div class="sortPrice">
+                <label class="sortParam">price
+                    <div class="startPrice"><input type="text" value="10"></div>
+                    <span>&ndash;</span>
+                    <div class="endPrice"><input type="text" value="1000"></div>
+                </label>
+            </div>
+            <div class="sortFree">
+                <label class="sortParam">
+                    <div class="freeCheck"><input type="checkbox"></div>
+                    free shipping
+                </label>
+            </div>
+            <div class="sortShip">
+                <label class="sortParam">sort to:
+                    <select class="sortTolist">
+                        <option value="usa">USA</option>
+                        <option value="china">China</option>
+                        <option value="japan">Japan</option>
+                        <option value="russian">Russian</option>
+                    </select>
+                </label>
+            </div>
+        </form>
+    </section>
+</div>
+<div class="container mainContent">
+    <aside class="leftForm">
+        <nav class="leftForm_nav">
+            <ul class="leftForm_list">
+                <div class="itemWrap"><li class="leftForm_item"><span>Top Sales</span></li></div>
+                <div class="itemWrap"><li class="leftForm_item"><span>Brand Focus</span></li></div>
+                <div class="itemWrap"><li class="leftForm_item open"><span>Hi-Tech</span></li>
+                    <ul class="itemList">
+                        <li><span>Cell Phones</span></li>
+                        <li><span>Cameras</span></li>
+                        <li><span>Computers</span></li>
+                        <li><span>TV, Audio</span></li>
+                        <li><span>Video Games</span></li>
+                    </ul>
+                </div>
+                <div class="itemWrap"><li class="leftForm_item"><span>Home</span></li></div>
+                <div class="itemWrap"><li class="leftForm_item"><span>Sale</span></li></div>
+            </ul>
+        </nav>
+        <form action="" class="leftAvailable">
+            <div action="" class="availableForm">
+                <div class="available">
+                    <div class="leftAvailable_name"><span>available</span></div>
+                    <div class="availableInput">
+                        <label class="leftAvailable_item storage">
+                            <div class="availRadio"><input type="radio" checked></div>
+                            In Storage
+                        </label>
+                        <label class="leftAvailable_item online">
+                            <div class="availRadio"><input type="radio"></div>
+                            In Online-Shop
+                        </label>
+                    </div>
+                </div>
+                <div class="brands">
+                    <div class="leftAvailable_name"><span>brands</span></div>
+                    <div class="brandsleInput">
+                        <label class="leftAvailable_item apple">
+                            <div class="brandsCheck"><input type="checkbox"></div>
+                            Apple
+                        </label>
+                        <label class="leftAvailable_item JBL">
+                            <div class="brandsCheck"><input type="checkbox" checked></div>
+                            JBL
+                        </label>
+                        <label class="leftAvailable_item bose">
+                            <div class="brandsCheck"><input type="checkbox"></div>
+                            Bose
+                        </label>
+                        <label class="leftAvailable_item nest">
+                            <div class="brandsCheck"><input type="checkbox"></div>
+                            Nest
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="availableForm">
+                <div class="condition">
+                    <div class="leftAvailable_name"><span>condition</span></div>
+                    <div class="brandsleInput">
+                        <label class="leftAvailable_item new">
+                            <div class="condCheck"><input type="checkbox"></div>
+                            New
+                        </label>
+                        <label class="leftAvailable_item manufacture">
+                            <div class="condCheck"><input type="checkbox" checked></div>
+                            Manufacturer Refurbished
+                        </label>
+                        <label class="leftAvailable_item seller">
+                            <div class="condCheck"><input type="checkbox"></div>
+                            Seller Refurbished
+                        </label>
+                        <label class="leftAvailable_item used">
+                            <div class="condCheck"><input type="checkbox"></div>
+                            Used
+                        </label>
+                        <label class="leftAvailable_item partWork">
+                            <div class="condCheck"><input type="checkbox"></div>
+                            For Parts or not Working
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </aside>
+    <main>
+        <div class="wrpaProduct">
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/apple_tv.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Apple TV 32GB</span>
+                        <span class="colorProd">BLACK</span>
+                        <span class="priceProd">$49.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/pebble_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Pebble Time</span>
+                        <span class="colorProd">Red</span>
+                        <span class="priceProd">$29.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/Zendure_4-Port_USB.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Zendure 4-Port USB</span>
+                        <span class="colorProd">White</span>
+                        <span class="priceProd">$49.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/smart_body_analyzer.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Withings Smart Body Analyzer ws-50</span>
+                        <span class="colorProd">Black</span>
+                        <span class="priceProd">$39.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="hitSales">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/jbl_charge2.png" alt="">
+                            <div class="priceProd">$39.99</div>
+                        </div>
+                    </a>
+                    <div class="fastBy">
+                        <div class="descrProd">
+                            <span class="titleProd">JBL Charge 2+</span>
+                            <span class="colorProd">Black</span>
+                        </div>
+                        <div class="byButton">
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/ollo_clip.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Ollo Clip New</span>
+                        <span class="colorProd">silver</span>
+                        <span class="priceProd">$19.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/fibit_charge_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Fitbit Charge HR Heart Rate and Activity Tracker</span>
+                        <span class="colorProd">Black</span>
+                        <span class="priceProd">$19.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/apple_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Apple Watch Sport 38mm Silver Aluminum Case</span>
+                        <span class="colorProd">Silver</span>
+                        <span class="priceProd">$49.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/on_ear.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Bose SoundLink On-Ear Headphones</span>
+                        <span class="colorProd">White</span>
+                        <span class="priceProd">$199.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/sonos_player.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Sonos Play-1 Wireless HiFi System</span>
+                        <span class="colorProd">Black</span>
+                        <span class="priceProd">$99.99</span>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/apple_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Apple Watch Sport 38mm Silver Aluminum Case</span>
+                        <span class="colorProd">Silver</span>
+                        <span class="priceProd">$49.99</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</div>
+<div class="container">
+    <div class="pagination">
+        <div class="pagArrow pagArrow_prev"><img src="src/assest/images/site_elem/prev_icon.png" alt="prevArrow"></div>
+        <nav class="paginationPage">
+            <ul class="paginationPage_list">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li class="activePage">4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+            </ul>
+        </nav>
+        <div class="pagArrow pagArrow_next"><img src="src/assest/images/site_elem/next_icon.png" alt="nextArrow"></div>
+    </div>
+</div>
+<div class="container bestSellersWrap">
+    <div class="bestSellers">
+        <div class="bestSellerse_title"><span>bestSellers</span></div>
+        <div class="bestSellerse_prod">
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/fibit_charge_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Fitbit Charge HR Heart Rate and Activity Tracker</span>
+                        <span class="colorProd">Black</span>
+                        <div class="priceProd">
+                            <span class="oldPrice">$109.99</span>
+                            <span class="newPrice">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/fibit_charge_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Fitbit Charge HR Heart Rate and Activity Tracker</span>
+                        <span class="colorProd">Black</span>
+                        <div class="priceProd">
+                            <span class="oldPrice">$109.99</span>
+                            <span class="newPrice">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/fibit_charge_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Fitbit Charge HR Heart Rate and Activity Tracker</span>
+                        <span class="colorProd">Black</span>
+                        <div class="priceProd">
+                            <span class="oldPrice">$109.99</span>
+                            <span class="newPrice">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="product">
+                <div class="cartProduct">
+                    <a href="#">
+                        <div class="imgProduct">
+                            <img src="src/assest/images/prod/fibit_charge_watch.png" alt="">
+                        </div>
+                    </a>
+                    <div class="descrProd">
+                        <span class="titleProd">Fitbit Charge HR Heart Rate and Activity Tracker</span>
+                        <span class="colorProd">Black</span>
+                        <div class="priceProd">
+                            <span class="oldPrice">$109.99</span>
+                            <span class="newPrice">$89.99</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+<section class="view">
+    <div class="container">
+        <div class="viewTitle">
+            <span class="mainViewTitle">What Our Customers Have to Say</span>
+            <span class="descTitle">Couple of Words About This Stories Section</span>
+        </div>
+        <div class="viewWrap">
+            <article class="viewBlock">
+                <div class="viewHead">
+                    <div class="viewAvatar">
+                        <img src="src/assest/images/site_elem/user1.png" alt="">
+                    </div>
+                    <div class="viewUsName">
+                        <span class="viewUsName_name">Celia Fields</span>
+                        <span class="viewUsName_prof">UX Expert</span>
+                    </div>
+                </div>
+                <div class="viewTxt">
+                    <p>This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                </div>
+            </article>
+            <article class="viewBlock">
+                <div class="viewHead">
+                    <div class="viewAvatar">
+                        <img src="src/assest/images/site_elem/user2.png" alt="">
+                    </div>
+                    <div class="viewUsName">
+                        <span class="viewUsName_name">Alexander Lee</span>
+                        <span class="viewUsName_prof">Founder</span>
+                    </div>
+                </div>
+                <div class="viewTxt">
+                    <p>Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+                </div>
+            </article>
+            <article class="viewBlock">
+                <div class="viewHead">
+                    <div class="viewAvatar">
+                        <img src="src/assest/images/site_elem/user3.png" alt="">
+                    </div>
+                    <div class="viewUsName">
+                        <span class="viewUsName_name">Lenora Sandoval</span>
+                        <span class="viewUsName_prof">Product Manager</span>
+                    </div>
+                </div>
+                <div class="viewTxt">
+                    <p>This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!'she said.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<footer class="mainFooter"></footer>
+</body>
+</html>
