@@ -162,6 +162,48 @@ a {
 .sliderSec_slider {
     height: 500px;
     background-color: #1c1e23;
+    position: relative;
+}
+.sliderWrap {
+    padding: 0 115px;
+    height: 100%;
+}
+.slide {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.descSlid {
+    display: flex;
+    flex-direction: column;
+    width: 461px;
+    left: 95px;
+    justify-content: center;
+}
+.descSlid_head {
+    margin-bottom: 35px;
+}
+.descSlid_head span {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 42px;
+    font-weight: 400;
+    font-weight: bold;
+}
+.descSlid_txt p {
+    color: #ffffff;
+    font-family: "Crimson Text";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.imgSlid, .descSlid {
+    height: 100%;
+    position: absolute;
+}
+.imgSlid {
+    right: 195px;
 }
 /*-- Style for slider section --*/
 
@@ -578,3 +620,6 @@ a {
     width: 100%;
 }
 /*-- Style for footer --*/
+/* Style for slider*/
+
+/* Style for slider*/
