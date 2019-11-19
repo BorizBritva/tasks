@@ -527,3 +527,54 @@ a {
     line-height: 24px;
 }
 /*-- Style for view --*/
+/*-- Style for footer --*/
+.mainFooter .container {
+    flex-direction: column;
+}
+.mainFooter {
+    background-color: #222328;
+}
+.footerNav {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+.socNetElem {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.bottonNav .mainHead_nav__item a {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.bottonNav {
+    margin: auto;
+}
+.socNet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 3px;
+}
+.logoFooter, .socNet {
+    position: absolute;
+    height: 100%;
+}
+.logoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 3px;
+}
+.articleFooter {
+    border-top: 1px solid #ffffff;
+    height: 150px;
+    width: 100%;
+}
+/*-- Style for footer --*/
