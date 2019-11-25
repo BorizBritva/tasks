@@ -271,7 +271,7 @@ input[placeholder] {
     justify-content: space-between;
 }
 .musems_list_item {
-    width: 31.3%;
+    width: 31.4%;
     /*width: 211px;*/
     height: 245px;
     /* margin-right: 20px; */
@@ -314,6 +314,10 @@ input[placeholder] {
     height: 24px;
     top: 10px;
     right: 11px;
+}
+.col_map {
+    margin-right: 0px;
+    width: 50%;
 }
 .map_wrap {
     width: 100%;
