@@ -1,152 +1,294 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Source Sans Pro';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
+@import url('https://fonts.googleapis.com/css?family=Actor|Source+Sans+Pro&display=swap');
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 .container {
-    width: 100%;
-    position: relative;
+  position: relative;
+  width: 1440px;
+  margin: 0px auto;
+}
+.row {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
 }
 .col-half {
-    width: calc(50% - 20px);
-    margin-left: 20px;
+  position: relative;
+  width: calc(50% - 20px);
+  margin-right: 20px;
+  height: 100%;
 }
-.topHead {
-    background-color: black;
+.col-half:last-child {
+  margin-right: 0px;
 }
-.topHead {
-    width: 100%;
-    height: 80px;
-    background-color: #0084BA;
+.header_top {
+  height: 80px;
+  background-color: #0084BA;
 }
-.topHead > div {
-    display: inline-block;
-    vertical-align: middle;
+.wrap_logo {
+  width: 73px;
+  height: 51px;
+  display: flex;
+  margin-left: 25px;
+  margin-right: 67px;
 }
-.wrap_Logo {
-    margin-top: 13px;
-    margin-right: 67px;
-}
-.wrap_Logo>div {
-    display: inline-block;
+.logo_elem {
+  height: 100%;
 }
 .logo_one {
-    height: 50px;
-    width: 39px;
-    background: url('../assest/logo.svg');
+  width: 39px;
+  background: url("../assest/logo_one.svg") left center no-repeat;
 }
 .logo_two {
-    height: 50px;
-    width: 11px;
-    background: url('../assest/logo_3.svg');
+  width: 12px;
+  background: url("../assest/logo_two.svg") left center no-repeat;
 }
 .logo_three {
-    height: 50px;
-    width: 22px;
-    background: url('../assest/logo_2.svg');
+  width: 22px;
+  background: url("../assest/logo_three.svg") left center no-repeat;
 }
-.searchCity {
-    margin-top: 13px;
-    height: 55px;
+.searchForm_wrap {
+  position: relative;
+  height: 55px;
+
+}
+.search_form {
+  position: relative;
+  height: 100%;
+}
+.search_button {
+  position: absolute;
+  background: #FFFFFF;
+  /*top: 31%;
+  left: 4.25%;*/
+  top: 17px;
+  left: 17px;
+}
+.search_field {
+  height: 100%;
+  width: 400px;
+  padding-left: 47px;
+  background: #FFFFFF;
+  border: 1px solid #C2C2C2;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+input[placeholder] {
+  color: black;
+}
+.select_city select {
+  background-color: #0084BA;
+}
+.header_nav {
+  height: 40px;
+  background-color: #0098D7;
+}
+.header_nav nav {
+  margin: 0px auto;
+}
+.nav_item a{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.nav_item {
+  display: inline;
+  margin-right: 75px;
+}
+.nav_item:last-child {
+  margin-right: 0px;
+}
+.header_breadcrumbs {
+  height: 34px;
+}
+.header_breadcrumbs nav {
+  padding: 0px 20px;
+}
+.breadcrumbs_item {
+  display: inline;
+  margin-right: 10px;
+}
+.breadcrumbs_item:last-child {
+  margin-right: 0px;
+}
+.breadcrumbs_item a{
+  font-size: 14px;
+  color: black;
+}
+.slider_section {
+  position: relative;
+  height: 496px;
+  width: 100%;
+}
+.slide_fone {
+    width: 100%;
+    height: 416px;
+}
+.slider_list {
+  height: 100%;
+}
+.slide_name {
+  height: 80px;
+}
+.slide_name h1 {
+  height: 100%;
+  font-size: 40px;
+  color: black;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+.slider_button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #E26D5A;
+  bottom: 170px;
+}
+.prev_slide {
+  left: 4.5%;
+}
+.next_slide {
+  right: 4.5%;
+}
+.filter_museums_cont {
+    border-bottom: 1px solid #E2E2E2;
+}
+.wrap_filter_museums {
     position: relative;
+    height: 87px;
 }
-.searchCity select {
-    background:#0084BA;
-}
-.searchCity_wrap {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-    width: 400px;
-    height: 100%;
-}
-.searchCity_wrap button {
-    position: absolute;
-    top: 17px;
-    left: 16px;
-    background-color: #ffffff;
-}
-.searchCity_input {
+.filter_museums, .search_card {
     width: 100%;
     height: 100%;
-    color: #000000;
-    padding-left: 47px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.filter_museums label {
+    color: #1C2E36;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 46px;
+    width: 113px;
+    margin-right: 38px;
+}
+.filter_museums select {
+    background: #FFFFFF;
     border: 1px solid #C2C2C2;
     box-sizing: border-box;
     border-radius: 3px;
+    height: 63.2%;
+    color: #666666;
 }
-.searchCity label {
-    display: inline-block;
+.subcat {
+    width: 127px;
+    margin-right: 119px;
 }
-.hfcWrap {
-    width: calc(50% - 20px);
-    height: 100%;
-    position: absolute;
-    right: 0;
+.type {
+    width: 160px;
+    margin-right: 16px;
 }
-.icon_button {
-    margin-right: 7px;
+.duration {
+    width: 104px;
 }
-.hfc, .account {
-    display: inline-block;
-    /* height: 100%; */
-    margin-top: 30px;
+.main_row {
+    padding: 0;
+    position: relative;
 }
-.hfc_elem {
-    display: inline;
-    margin-right: 30px;
-}
-.hfc_elem:last-child {
+.main_col:last-child {
     margin-right: 0px;
 }
-.navField_wrap {
-    width: 100%;
-    height: 40px;
-    background-color: #0098D7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.filter_museums option {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
 }
-.navField {
-    display: inline-block;
+.search_card_row {
+    height: 56px;
 }
-.navField_item {
-    display: inline;
-    height: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    margin-right: 70px;
+.search_card {
+    padding-left: 20px;
 }
-.navField_item a {
-    font-size: 18px;
+.num_res {
+    padding-right: 10px;
 }
-.navField_item:last-child {
-    margin-right: 0px;
-}
-.breadcrumbs_wrap {
-    height: 34px;
-}
-.breadcrumbs_item {
-    display: inline;
-}
-.breadcrumbs_item::after {
-    display: inline-block;
-    content: "";
-    background: url('../assest/images/account.png') no-repeat;
-}
-.breadcrumbs_item a {
+.search_card select,.search_card option {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
     color: #1C2E36;
+}
+.search_card select {
+    position: absolute;
+    height: 100%;
+    right: 0px;
+}
+.search_card span, .search_card label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #1C2E36;
+}
+.musems_list {
+    padding-left: 25px;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 27px;
+}
+.musems_list_item {
+    width: 211px;
+    height: 245px;
+    margin-right: 20px;
+    position: relative;
+}
+.musems_list_item:nth-child(3n) {
+    margin-right: 0px;
+}
+.musems_list_item p {
+    width: 100%;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    color: #1C2E36;
+}
+.item_card__fone {
+    width: 100%;
+    height: 140px;
+}
+.item_card_star {
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    top: 10px;
+    right: 11px;
 }
