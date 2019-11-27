@@ -214,6 +214,9 @@ input[placeholder] {
     position: relative;
     height: 87px;
 }
+.filter_museums_mob {
+  display: none;
+}
 .filter_museums, .search_card {
     width: 100%;
     height: 100%;
@@ -413,7 +416,7 @@ input[placeholder] {
         width: 100%;
         margin-right: 8px;
     }
-    .wrap_filter_museums select {
+    .filter_museums label, .wrap_filter_museums select {
         margin-right: 12px;
     }
     .filter_museums label {
@@ -431,8 +434,54 @@ input[placeholder] {
   .login, .help_elem {
     display: none;
   }
+  .help_elem_img {
+    margin-right: 28px;
+  }
   .help_mob {
     padding: 0px;
     display: block;
+  }
+}
+@media (max-width: 630px) {
+  .searchForm_wrap {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .filter_museums {
+    padding: 0px 20px;
+  }
+  .wrap_filter_museums {
+    height: 100px;
+  }
+  .subcat, .type, .duration {
+    display: none;
+  }
+  .filter_museums_mob {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .filter_museums_mob button {
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 63.2%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #666666;
+    padding: 9px;
+  }
+  .col_map {
+    display: none;
+  }
+  .musems_card, .col_map {
+    margin-right: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
