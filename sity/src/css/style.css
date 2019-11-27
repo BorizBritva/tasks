@@ -173,7 +173,7 @@ input[placeholder] {
 }
 .slider_section {
   position: relative;
-  height: 496px;
+  /* height: 496px; */
   width: 100%;
 }
 .slide_fone {
@@ -232,6 +232,7 @@ input[placeholder] {
     line-height: 46px;
     /* width: 113px; */
     /* margin-right: 38px; */
+    padding-right: 5%;
 }
 .filter_museums select {
     background: #FFFFFF;
@@ -243,11 +244,11 @@ input[placeholder] {
 }
 .subcat {
     width: 127px;
-    /* margin-right: 119px; */
+    margin-right: 8.4%;
 }
 .type {
     width: 160px;
-    /* margin-right: 16px; */
+    margin-right: 16px;
 }
 .duration {
     /* width: 104px; */
@@ -446,8 +447,9 @@ input[placeholder] {
   .searchForm_wrap {
     display: none;
   }
-}
-@media (max-width: 560px) {
+  .wrap_logo {
+    margin-right: 0px; ;
+  }
   .filter_museums {
     padding: 0px 20px;
   }
