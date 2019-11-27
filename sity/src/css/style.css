@@ -412,7 +412,9 @@ input[placeholder] {
     }
 }
 @media (max-width: 768px) {
-
+    .slide_name h1 {
+        font-size: 30px;
+    }
     .wrap_filter_museums {
         width: 100%;
         margin-right: 8px;
@@ -432,6 +434,9 @@ input[placeholder] {
     }
 }
 @media (max-width: 700px) {
+  .musems_list_item p {
+      font-size: 14px;
+  }
   .login, .help_elem {
     display: none;
   }
@@ -444,6 +449,15 @@ input[placeholder] {
   }
 }
 @media (max-width: 630px) {
+   .musems_list_item p {
+      font-size: 12px;
+   }
+  .musems_list_item {
+      flex-basis: calc(100%/3 - 20px);
+  }
+  .slide_name h1 {
+      font-size: 25px;
+  }
   .searchForm_wrap {
     display: none;
   }
@@ -480,10 +494,15 @@ input[placeholder] {
   .col_map {
     display: none;
   }
-  .musems_card, .col_map {
-    margin-right: 0px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .col-half {
+      flex-basis: 100%;
   }
+}
+@media (max-width: 500px) {
+    .musems_list_item p {
+       font-size: 10px;
+    }
+   .musems_list_item {
+       flex-basis: calc(100%/2 - 20px);
+   }
 }
