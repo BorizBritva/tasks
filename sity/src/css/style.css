@@ -48,6 +48,8 @@ li {
 .header_top {
   height: 80px;
   background-color: #0084BA;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .wrap_burger_menu {
     padding-left: 16px;
@@ -83,6 +85,8 @@ li {
 .search_form {
   position: relative;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .search_button {
   position: absolute;
@@ -94,7 +98,7 @@ li {
 }
 .search_field {
   height: 100%;
-  width: 400px;
+  /* width: 400px; */
   padding-left: 47px;
   background: #FFFFFF;
   border: 1px solid #C2C2C2;
@@ -108,7 +112,12 @@ input[placeholder] {
 .select_city select {
   background-color: #0084BA;
 }
-.head_right .row {
+
+.head_right, .head_left {
+    display: flex;
+    align-items: center;
+}
+.head_right {
     justify-content: flex-end;
 }
 .help_elem, .login {
@@ -123,6 +132,9 @@ input[placeholder] {
 .login {
     padding-left: 43px;
     padding-right: 10px;
+}
+.help_mob {
+  display: none;
 }
 .header_nav {
   height: 40px;
@@ -208,14 +220,15 @@ input[placeholder] {
     display: flex;
     align-items: center;
     padding-left: 20px;
+    flex-wrap: wrap;
 }
 .filter_museums label {
     color: #1C2E36;
     font-weight: normal;
     font-size: 24px;
     line-height: 46px;
-    width: 113px;
-    margin-right: 38px;
+    /* width: 113px; */
+    /* margin-right: 38px; */
 }
 .filter_museums select {
     background: #FFFFFF;
@@ -227,14 +240,14 @@ input[placeholder] {
 }
 .subcat {
     width: 127px;
-    margin-right: 119px;
+    /* margin-right: 119px; */
 }
 .type {
     width: 160px;
-    margin-right: 16px;
+    /* margin-right: 16px; */
 }
 .duration {
-    width: 104px;
+    /* width: 104px; */
 }
 .main_row {
     padding: 0;
@@ -355,7 +368,7 @@ input[placeholder] {
         font-size: 14px;
     }
     .search_field {
-        width: 297px;
+        /* width: 297px; */
     }
 }
 @media (max-width: 1200px) {
@@ -404,7 +417,7 @@ input[placeholder] {
         margin-right: 12px;
     }
     .filter_museums label {
-        margin-right: 184px;
+        /* margin-right: 184px; */
     }
     .sort_prop {
         left: 28px;;
@@ -413,4 +426,13 @@ input[placeholder] {
         display: flex;
         flex-direction: row-reverse;
     }
+}
+@media (max-width: 700px) {
+  .login, .help_elem {
+    display: none;
+  }
+  .help_mob {
+    padding: 0px;
+    display: block;
+  }
 }
