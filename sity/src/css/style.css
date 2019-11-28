@@ -175,10 +175,14 @@ input[placeholder] {
   position: relative;
   /* height: 496px; */
   width: 100%;
-  height: auto;
+  height: 416px;
 }
 .slide_fone {
-    width: 100%;
+    width: auto;
+}
+.slide {
+    height: 100%;
+    overflow: hidden;
 }
 .slider_list {
   height: 100%;
@@ -496,6 +500,12 @@ input[placeholder] {
   }
   .col-half {
       flex-basis: 100%;
+  }
+  .prev_slide {
+    left: 0%;
+  }
+  .next_slide {
+    right: 0%;
   }
 }
 @media (max-width: 500px) {
