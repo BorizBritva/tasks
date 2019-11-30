@@ -10,11 +10,6 @@ html {
   border: 0;
   box-sizing: inherit;
   font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
 }
 a {
   text-decoration: none;
@@ -24,495 +19,405 @@ li {
 }
 .container {
   position: relative;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0px auto;
 }
-.row {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0px 8px;
+/*-- header-search style --*/
+.header-search {
+    display: flex;
+    align-items: center;
+    background-color: #0084BA;
+    height: 80px;
 }
-.col-half {
-  position: relative;
-  /* width: calc(50% - 20px); */
-  flex-basis: 50%;
-  margin-right: 20px;
-  height: 100%;
-}
-.col-half:last-child {
-  margin-right: 0px;
-}
-.header_top {
-  height: 80px;
-  background-color: #0084BA;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.wrap_burger_menu {
-    padding-left: 16px;
+.burger-menu {
+    background-color: #0084BA;
+    padding-left: 24px;
     display: none;
 }
-.wrap_logo {
-  width: 73px;
-  height: 51px;
-  display: flex;
-  margin-left: 25px;
-  margin-right: 67px;
+.logo {
+    flex-wrap: nowrap;
+    padding-left: 33px;
+    padding-right: 67px;
 }
-.logo_elem {
-  height: 100%;
+.hfcl__elem-mob {
+    padding-left: 28px;
+    display: none;
 }
-.logo_one {
-  width: 39px;
-  background: url("../assest/logo_one.svg") left center no-repeat;
-}
-.logo_two {
-  width: 12px;
-  background: url("../assest/logo_two.svg") left center no-repeat;
-}
-.logo_three {
-  width: 22px;
-  background: url("../assest/logo_three.svg") left center no-repeat;
-}
-.searchForm_wrap {
-  position: relative;
-  height: 55px;
-
-}
-.search_form {
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.search_button {
-  position: absolute;
-  background: #FFFFFF;
-  /*top: 31%;
-  left: 4.25%;*/
-  top: 17px;
-  left: 17px;
-}
-.search_field {
-  height: 100%;
-  /* width: 400px; */
-  padding-left: 47px;
-  background: #FFFFFF;
-  border: 1px solid #C2C2C2;
-  box-sizing: border-box;
-  border-radius: 3px;
-  margin-right: 20px;
-}
-input[placeholder] {
-  color: black;
-}
-.select_city select {
-  background-color: #0084BA;
-}
-
-.head_right, .head_left {
+.header-search__form {
     display: flex;
     align-items: center;
-}
-.head_right {
-    justify-content: flex-end;
-}
-.help_elem, .login {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-}
-.help_elem_img {
-    margin-right: 7px;
-}
-.login {
-    padding-left: 43px;
-    padding-right: 10px;
-}
-.help_mob {
-  display: none;
-}
-.header_nav {
-  height: 40px;
-  background-color: #0098D7;
-}
-.header_nav nav {
-  margin: 0px auto;
-}
-.nav_item a{
-  text-transform: uppercase;
-  font-size: 18px;
-}
-.nav_item {
-  display: inline;
-  margin-right: 75px;
-}
-.nav_item:last-child {
-  margin-right: 0px;
-}
-.header_breadcrumbs {
-  height: 34px;
-}
-.header_breadcrumbs nav {
-  padding: 0px 20px;
-}
-.breadcrumbs_item {
-  display: inline;
-  margin-right: 10px;
-}
-.breadcrumbs_item:last-child {
-  margin-right: 0px;
-}
-.breadcrumbs_item a{
-  font-size: 14px;
-  color: black;
-}
-.slider_section {
-  position: relative;
-  /* height: 496px; */
-  width: 100%;
-  height: 416px;
-}
-.slide_fone {
-    width: auto;
-}
-.slide {
-    height: 100%;
-    overflow: hidden;
-}
-.slider_list {
-  height: 100%;
-}
-.slide_name {
-  height: 80px;
-}
-.slide_name h1 {
-  height: 100%;
-  font-size: 40px;
-  color: black;
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
-}
-.slider_button {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #E26D5A;
-  top: 50%;
-}
-.prev_slide {
-  left: 4.5%;
-}
-.next_slide {
-  right: 4.5%;
-}
-.filter_museums_cont {
-    border-bottom: 1px solid #E2E2E2;
-}
-.wrap_filter_museums {
+    height: 55px;
     position: relative;
-    height: 87px;
 }
-.filter_museums_mob {
-  display: none;
-}
-.filter_museums, .search_card {
-    width: 100%;
+.header-search__input {
     height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    flex-wrap: wrap;
-}
-.filter_museums label {
-    color: #1C2E36;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 46px;
-    /* width: 113px; */
-    /* margin-right: 38px; */
-    padding-right: 5%;
-}
-.filter_museums select {
+    width: 400px;
+    padding-left: 47px;
     background: #FFFFFF;
     border: 1px solid #C2C2C2;
     box-sizing: border-box;
     border-radius: 3px;
-    height: 63.2%;
-    color: #666666;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
 }
-.subcat {
-    width: 127px;
-    margin-right: 8.4%;
+.header-search__form label {
+    padding-left: 21px;
 }
-.type {
-    width: 160px;
-    margin-right: 16px;
+.header-search__button {
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 17px;
 }
-.duration {
-    /* width: 104px; */
+.header-search__select {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #0084BA;
+    color: #FFFFFF;
+    -webkit-appearance: none;
 }
-.main_row {
-    padding: 0;
-    align-items: flex-start;
+.chevron {
+    cursor: pointer;
+    padding-left: 4px;
 }
-.main_col:last-child {
+.indent {
+    flex-grow: 1;
+}
+.hfcl {
+    padding-right: 17px;
+}
+.hfcl__list, .hfcl__elem a, .header-nav, .breadcrumbs, .sity-name, .museums-filter, .sort, .change-disp {
+    display: flex;
+    align-items: center;
+}
+.hfcl__elem span {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.hfcl__elem {
+    cursor: pointer;
+    margin-right: 30px;
+}
+.login-button {
     margin-right: 0px;
 }
-.filter_museums option {
+.hfcl__elem img {
+    padding-right: 6px;
+}
+/*-- header-search style --*/
+/*-- header nav style --*/
+.header-nav {
+    height: 40px;
+    background-color: #0098D7;
+}
+.nav-menu {
+    margin: auto;
+}
+.nav-menu__elem {
+    cursor: pointer;
+    padding-left: 90px;
+    display: inline;
+}
+.nav-menu__elem:first-child {
+    padding-left: 0px;
+}
+.nav-menu__elem a {
+    font-family:'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.breadcrumbs {
+    height: 34px;
+}
+.breadcrumbs__menu {
+    padding: 0px 28px;
+}
+.breadcrumbs__elem {
+    display: inline;
+}
+.breadcrumbs__elem a {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
-    color: #666666;
+    line-height: 16px;
+    color: #1C2E36;
 }
-.search_card_row {
-    height: 56px;
-}
-.search_card {
-    padding-left: 20px;
-}
-.num_res {
-    padding-right: 10px;
-}
-.search_card select, .search_card option {
+.sity-name {
+    height: 80px;
+    padding-left: 28px;
+    font-family: 'Actor';
+    font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 40px;
+    line-height: 44px;
+    color: #1C2E36;
+}
+/*-- header nav style --*/
+/*-- slider styles --*/
+.slider {
+    height: 416px;
+    position: relative;
+}
+.slider__elem {
+    width: 100%;
+    height: 100%;
+}
+.slider__button {
+    width: 50px;
+    height: 50px;
+    background: #E26D5A;
+    position: absolute;
+    top: 50%;
+}
+.slider__button_prev {
+    left: 50px;
+}
+.slider__button_next {
+    right: 50px;
+}
+/*-- slider styles --*/
+/*-- museums filter style--*/
+.sort {
+    justify-content: space-between;
+    padding-right: 20px;
+    height: 57px;
+}
+.sort__select {
     background: #FFFFFF;
     box-sizing: border-box;
     border-radius: 3px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
     color: #1C2E36;
+    position: relative;
 }
-.search_card select {
-    position: absolute;
-    height: 100%;
-    right: 0px;
+.container__museums-filter {
+    border-bottom: 1px solid #E2E2E2;;
 }
-.search_card span, .search_card label {
+.sort__results, .sort label {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-align: right;
     color: #1C2E36;
+    padding-right: 7px;
 }
-.musems_list {
-    /* padding-left: 25px; */
-    flex-wrap: wrap;
-    padding: 0px 0px 0px 27px;
+.museums-filter {
+    padding-left: 28px;
+    height: 87px;
+}
+.museums-filter select {
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+    position: relative;
+    padding-left: 7.11px;
+}
+.museums-filter label {
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 46px;
+    color: #1C2E36;
+    padding-right: 50px;
+}
+.museums-filter__subcat {
+    width: 127px;
+    margin-right: 119px;
+}
+.museums-filter__type {
+    width: 160px;
+    margin-right: 16px;
+}
+.museums-filter__duration {
+    width: 104px;
+}
+.change-disp {
+    padding: 0px 20px;
     justify-content: space-between;
+    display: none;
 }
-.musems_list_item {
-    flex-basis:calc(100%/3 - 20px);
-    /* width: 31.4%; */
-    /*width: 211px;*/
-    height: 245px;
-    /* margin-right: 20px; */
-    margin-bottom: 40px;
+.change-disp__button {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #666666;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 32px;
+}
+.button-map {
+    width: 45px;
+}
+.button-fil {
+    width: 56px;
+}
+/*-- museums filter style--*/
+.main-content {
+    display: flex;
+}
+.main-content__museums {
+    width: 50%;
+    padding-left: 28px;
+}
+.museums-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.museums-list__elem {
+    width: 33.3%;
+    height: 285px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+.museums-list__card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
-/*.musems_list_item:nth-child(3n) {
-    margin-right: 0px;
-}*/
-.musems_list_item p {
+.museums-list__foto {
+    min-height: 140px;
     width: 100%;
+    margin-bottom: 13px;
+}
+.museums-list__desc {
     font-family: 'Actor';
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
     line-height: 22px;
-}
-.item_card {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.item_card_desc {
     color: #1C2E36;
+    flex-grow: 1;
 }
-.item_card_price {
+.museums-list__price {
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #0084BA;
+}
+.rating {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    color:  #0084BA;
-}
-.item_card__fone {
-    width: 100%;
-    height: 57.14%;
-    margin-bottom: 12px;
-}
-.item_card_star {
-    position: absolute;
-    width: 20px;
-    height: 24px;
     top: 10px;
-    right: 11px;
+    right: 11.5px;
 }
-.col_map {
-    position: sticky;
-    top: 0;
-}
-.map_wrap {
-    width: 100%;
-    height: 700px;
-    position: relative;
+.main-content__map {
+    width: 50%;
+    height: calc(100vh - 87px);
 }
 #map {
-    width: 100%;
     height: 100%;
 }
-
-@media (min-width: 1360px) and (max-width: 1400px) {
-    .musems_list_item {
-        flex-basis: calc(100%/3 - 13px);
+@media (max-width: 1100px) {
+    .header-search__input {
+        width: 297px;
+    }
+    .slider {
+        height: 350px;
     }
 }
-@media (max-width: 1360px) {
-    .musems_list_item p {
-        font-size: 14px;
-    }
-    .search_field {
-        /* width: 297px; */
-    }
-}
-@media (max-width: 1200px) {
-    .select_city select {
-        display: none;
-    }
-    .musems_list_item {
-        flex-basis: calc(100%/3 - 10px);
-    }
-}
-@media (max-width: 936px) {
-    .help_elem span {
-        display: none;
-    }
-}
-@media (max-width: 900px) {
-    .header_nav {
-        display: none;
-    }
-    .musems_list_item {
-        /*width: 163px;*/
-        flex-basis: calc(100%/2 - 10px);
-        height: 210px;
-        /*margin-right: 13px;*/
-    }
-    .musems_list_item p {
-        font-size: 16px;
-        line-height: 19px;
-    }
-}
-@media (max-width: 850px) {
-    .help_elem {
-        display: none;
-    }
-    .wrap_burger_menu {
+@media (max-width: 990px) {
+    .burger-menu {
         display: block;
     }
-}
-@media (max-width: 768px) {
-    .slide_name h1 {
-        font-size: 30px;
+    .header-search__form label, .header-nav {
+        display: none;
     }
-    .wrap_filter_museums {
-        width: 100%;
-        margin-right: 8px;
+    .museums-list__elem {
+        width: 50%;
     }
-    .filter_museums label, .wrap_filter_museums select {
-        margin-right: 12px;
+    .quest-button, .fav-button, .cart-button {
+        display: none;
     }
-    .filter_museums label {
-        /* margin-right: 184px; */
+    .slider {
+        height: 260px;
     }
-    .sort_prop {
-        left: 28px;;
-    }
-    .search_card {
-        display: flex;
+    .sort {
         flex-direction: row-reverse;
     }
 }
 @media (max-width: 700px) {
-  .musems_list_item p {
-      font-size: 14px;
-  }
-  .login, .help_elem {
-    display: none;
-  }
-  .help_elem_img {
-    margin-right: 28px;
-  }
-  .help_mob {
-    padding: 0px;
-    display: block;
-  }
-}
-@media (max-width: 630px) {
-   .musems_list_item p {
-      font-size: 12px;
-   }
-  .musems_list_item {
-      flex-basis: calc(100%/3 - 20px);
-  }
-  .slide_name h1 {
-      font-size: 25px;
-  }
-  .searchForm_wrap {
-    display: none;
-  }
-  .wrap_logo {
-    margin-right: 0px; ;
-  }
-  .filter_museums {
-    padding: 0px 20px;
-  }
-  .wrap_filter_museums {
-    height: 100px;
-  }
-  .subcat, .type, .duration {
-    display: none;
-  }
-  .filter_museums_mob {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .filter_museums_mob button {
-    background: #FFFFFF;
-    border: 1px solid #C2C2C2;
-    box-sizing: border-box;
-    border-radius: 3px;
-    height: 63.2%;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    color: #666666;
-    padding: 9px;
-  }
-  .col_map {
-    display: none;
-  }
-  .col-half {
-      flex-basis: 100%;
-  }
-  .prev_slide {
-    left: 0%;
-  }
-  .next_slide {
-    right: 0%;
-  }
-}
-@media (max-width: 500px) {
-    .musems_list_item p {
-       font-size: 10px;
+    .container__museums-filter {
+        border: none;
+        padding-bottom: 25px;
     }
-   .musems_list_item {
-       flex-basis: calc(100%/2 - 20px);
-   }
+    .museums-filter select, .sort, .main-content__map, .header-search__form, .login-button {
+        display: none;
+    }
+    .museums-filter {
+        height: 52px;
+    }
+    .main-content__museums {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .hfcl__elem-mob {
+        display: block;
+    }
+    .change-disp {
+        display: flex;
+    }
+    .slider__button_prev {
+        left: 0px;
+    }
+    .slider__button_next {
+        right: 0px;
+    }
+    .sity-name {
+        height: 54px;
+        font-size: 20px;
+    }
+    .logo {
+        padding-right: 0px;
+    }
+    .logo-one {
+        width: 28.32px;
+    }
+    .logo-two {
+        width: 8.71px;
+    }
+    .logo-three {
+        width: 15.97px;
+    }
+    .slider {
+        height: 363px;
+    }
 }

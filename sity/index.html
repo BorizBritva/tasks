@@ -1,285 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width; initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sity</title>
-  <meta name="description" content="Entertainment and recreation in popular cities of the world">
-  <meta name="keywords" content="tours, attractions, museums, discount passes, neighborhoods, leisure, entertainment">
-  <link rel="stylesheet" href="src/css/style.css">
-  <script type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sity</title>
+    <meta name="description" content="Sitys museums">
+    <meta name="keywords" content="musems">
+    <link rel="stylesheet" href="src//css/style.css">
+    <script type="text/javascript" src="src/script/script.js"></script>
 </head>
 <body>
 <header>
 <div class="container">
-  <div class="row header_top">
-    <div class="head_left">
-      <div class="wrap_burger_menu">
-          <img src="src/assest/images/burger.png" alt="burger">
-      </div>
-      <div class="wrap_logo">
-        <div class="logo_elem logo_one"></div>
-        <div class="logo_elem logo_two"></div>
-        <div class="logo_elem logo_three"></div>
-      </div>
-      <div class="searchForm_wrap">
-        <form action="" role="search" class="search_form">
-          <input type="search" class="search_field" placeholder="Search New York City">
-          <button type="submit" title="Submit your search query" class="search_button"><img src="src/assest/images/search_icon.png" alt="search button"></button>
-          <label class="select_city" for="city">
-            <select name="city">
-              <option value="NewYork">New York</option>
-              <option value="Tokio">Tokio</option>
-              <option value="London">London</option>
-              <option value="Berlin">Berlin</option>
-            </select>
-          </label>
+    <div class="header-search">
+        <button type="button" name="button" class="burger-menu">
+            <img src="src/assest/images/burger-icon.svg" alt="burger-menu">
+        </button>
+        <div class="logo">
+            <a href="#">
+                <img src="src/assest/logo-one.svg" alt="logo" class="logo-one">
+                <img src="src/assest/logo-two.svg" alt="logo" class="logo-two">
+                <img src="src/assest/logo-three.svg" alt="logo" class="logo-three">
+            </a>
+        </div>
+        <form action="" class="header-search__form" role="search">
+            <input type="search" name="search" value="" class="header-search__input" placeholder="Search New York...">
+            <button class="header-search__button" type="button" name="button">
+                <img src="src/assest/images/search-icon.svg" alt="search-icon">
+            </button>
+            <label for="city">
+                <select class="header-search__select" name="city">
+                    <option value="new-york">New York</option>
+                    <option value="london">London</option>
+                    <option value="russian">Russian</option>
+                    <option value="paris">Paris</option>
+                </select>
+                <span  class="chevron">
+                    <img src="src/assest/images/chevron-down.svg" alt="chevron-down">
+                </span>
+            </label>
         </form>
-      </div>
-      </div>
-      <div class="head_right">
-        <div class="help_elem help"><img class="help_elem_img" src="src/assest/images/question.png" alt=""><span>Help</span></div>
-        <div class="help_elem favorite"><img class="help_elem_img" src="src/assest/images/favorite.png" alt=""><span>Favorites</span></div>
-        <div class="help_elem cart"><img class="help_elem_img" src="src/assest/images/cart.png" alt=""><span>Cart</span></div>
-        <div class="login"><img class="help_elem_img" src="src/assest/images/login.png" alt="login"><span>Login | Register</span></div>
-        <div class="help_mob help"><img class="help_elem_img" src="src/assest/images/question_mob.png" alt=""></div>
-        <div class="help_mob help_search"><img class="help_elem_img" src="src/assest/images/search_mob.png" alt=""></div>
-        <div class="help_mob login"><img class="help_elem_img" src="src/assest/images/login_mob.png" alt="login"></div>
-      </div>
-  </div>
-  <div class="row header_nav">
-    <nav>
-      <ul class="nav_list">
-        <li class="nav_item"><a href="#">tours</a></li>
-        <li class="nav_item"><a href="#">attractions</a></li>
-        <li class="nav_item"><a href="#">museums</a></li>
-        <li class="nav_item"><a href="#">discount passes</a></li>
-        <li class="nav_item"><a href="#">neighborhoods</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="row header_breadcrumbs">
-    <nav>
-      <ul class="breadcrumbs_list">
-        <li class="breadcrumbs_item"><a href="#">Category</a></li>
-        <li class="breadcrumbs_item"><a href="#">Museums</a></li>
-      </ul>
-    </nav>
-  </div>
+        <div class="indent"></div>
+        <nav class="hfcl">
+            <ul class="hfcl__list">
+                <li class="hfcl__elem quest-button">
+                    <a href="#">
+                        <img src="src/assest/images/question-icon.svg" alt="question"><span>Help</span>
+                    </a>
+                </li>
+                <li class="hfcl__elem fav-button">
+                    <a href="#">
+                        <img src="src/assest/images/star-icon.svg" alt="favorite"><span>Favorite</span>
+                    </a>
+                </li>
+                <li class="hfcl__elem cart-button">
+                    <a href="#">
+                        <img src="src/assest/images/cart-icon.svg" alt="cart"><span>Cart</span>
+                    </a>
+                </li>
+                <li class="hfcl__elem login-button">
+                    <a href="#">
+                        <img src="src/assest/images/user-icon.svg" alt="login"><span>Log in | Register</span>
+                    </a>
+                </li>
+                <li class="hfcl__elem-mob">
+                    <a href="#">
+                        <img src="src/assest/images/question-mob.svg" alt="question">
+                    </a>
+                </li>
+                <li class="hfcl__elem-mob">
+                    <a href="#">
+                        <img src="src/assest/images/search-mob.svg" alt="search">
+                    </a>
+                </li>
+                <li class="hfcl__elem-mob">
+                    <a href="#">
+                        <img src="src/assest/images/login-mob.svg" alt="login">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-nav">
+        <nav class="nav-menu">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__elem">
+                    <a href="#">Tours</a>
+                </li>
+                <li class="nav-menu__elem">
+                    <a href="#">Attractions</a>
+                </li>
+                <li class="nav-menu__elem">
+                    <a href="#">Museums</a>
+                </li>
+                <li class="nav-menu__elem">
+                    <a href="#">Discount passes</a>
+                </li>
+                <li class="nav-menu__elem">
+                    <a href="#">Neighborhoods</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="breadcrumbs">
+        <nav class="breadcrumbs__menu">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__elem">
+                    <a href="#">Category</a>
+                </li>
+                <span  class="chevron">
+                    <img src="src/assest/images/chevron-right.png" alt="chevron-right">
+                </span>
+                <li class="breadcrumbs__elem">
+                    <a href="#">Museums</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1 class="sity-name">New York City Museums</h1>
 </div>
 </header>
-<div class="container">
-  <section class="slider_section">
-    <ul class="slider_list">
-      <li class="slide">
-          <div class="slide_name"><h1>New York City Museums</h1></div>
-          <img src="src/assest/images/guggenheim.png" alt="" class="slide_fone">
-      </li>
-    </ul>
-    <button type="button" class="slider_button prev_slide"><img src="src/assest/images/left_arr.png" alt=""></button>
-    <button type="button" class="slider_button next_slide"><img src="src/assest/images/right_arr.png" alt=""></button>
-  </section>
-</div>
+<section class="slider">
+    <img class="slider__elem" src="src/assest/images/guggenheim.png" alt="">
+    <button class="slider__button slider__button_prev" type="button" name="button">
+        <img src="src/assest/images/chevron-right.svg" alt="prev">
+    </button>
+    <button class="slider__button slider__button_next" type="button" name="button">
+        <img src="src/assest/images/chevron-left.svg" alt="next">
+    </button>
+</section>
 <main>
-    <div class="container filter_museums_cont">
-        <div class="col-half wrap_filter_museums">
-            <form action="" class="filter_museums">
-                <label for="museums">Museums</label>
-                <select class="subcat" name="museums">
-                    <option value="subcategories">Subcategories</option>
-                    <option value="subcategories">Subcategories</option>
-                    <option value="subcategories">Subcategories</option>
-                    <option value="subcategories">Subcategories</option>
-                </select>
-                <select class="type" name="museums">
-                    <option value="neighborhoods">Neighborhoods</option>
-                    <option value="tours">Tours</option>
-                    <option value="attractions">Attractions</option>
-                    <option value="museums">Museums</option>
-                </select>
-                <select class="duration" name="museums">
-                    <option>Duration</option>
-                    <option value="one_hour">1 hour</option>
-                    <option value="two_hours">2 hours</option>
-                    <option value="five_hours">5 hours</option>
-                </select>
-                <div class="filter_museums_mob">
-                  <button type="button" name="museums">Map</button>
-                  <button type="button" name="museums">Filter</button>
-                </div>
-                <!--<select class="show_map">
-                    <input type="button" name="" value="Map">
-                </select>
-                <select class="filter">
-                    <input type="button" name="" value="Filter">
-                </select>-->
-            </form>
+    <aside class="container container__museums-filter">
+
+        <form class="museums-filter" action="" method="post">
+            <label for="museums" class="museums-filter__name">Museums</label>
+            <select class="museums-filter__subcat" name="museums">
+                <option>Subcategories</option>
+                <span  class="chevron">
+                    <img src="src/assest/images/chevron-down-one.svg" alt="chevron-down">
+                </span>
+            </select>
+            <select class="museums-filter__type" name="museums">
+                <option>Neighborhoods</option>
+                <span  class="chevron">
+                    <img src="src/assest/images/chevron-down-one.svg" alt="chevron-down">
+                </span>
+            </select>
+            <select class="museums-filter__duration" name="museums">
+                <option>Duration</option>
+                <span  class="chevron">
+                    <img src="src/assest/images/chevron-down-one.svg" alt="chevron-down">
+                </span>
+            </select>
+        </form>
+        <div class="change-disp">
+            <button type="button" name="button" class="change-disp__button button-map">Map</button>
+            <button type="button" name="button" class="change-disp__button button-fil">Filter</button>
         </div>
-    </div>
-    <div class="container">
-        <div class="row main_row">
-            <div class="col-half main_col musems_card">
-                <div class="row search_card_row">
-                <form action="" class="search_card">
-                    <label for="sort_card">
-                        <span class="num_res">16</span>Results
-                    </label>
-                    <select class="sort_prop" name="sort_card">
-                        <option>Sort</option>
-                        <option value="">More</option>
-                        <option value="">Less</option>
-                        <option value="">Popular</option>
-                    </select>
-                </form>
-                </div>
-                <ul class="row musems_list">
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">NYC Museum of Art Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-1.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">The Bronx Museum of the Arts Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-2.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">Brooklyn Museum of the Arts Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-3.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">American Folk Art Museum Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-4.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">The Frick Collection Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-5.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">Guggenheim Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-6.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">Hall of Science Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-7.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">The Intrepid Museum Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-8.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">Metropolitan Museum of Art Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-9.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">The Museum of Modern Art Admission with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-10.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">Morgan Library Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-11.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">The Museum of the Moving Image Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-12.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">Museum of Natural History Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-13.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">The New Museum Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                    <li class="musems_list_item">
-                        <a href="#" class="item_card">
-                            <img src="src/assest/images/Bitmap-14.png" alt="" class="item_card__fone">
-                            <p class="item_card_desc">International Center of Photography Tour with Skip-the-Line Access</p>
-                            <p class="item_card_price">from $26 per person</p>
-                            <img src="src/assest/images/star.svg" alt="" class="item_card_star">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-half main_col col_map">
-                <div class="map_wrap">
-                    <div id="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96674.66808259908!2d-74.00562575585037!3d40.78218109975981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2z0JzQsNC90YXRjdGC0YLQtdC9LCDQndGM0Y4t0JnQvtGA0LosINCh0KjQkA!5e0!3m2!1sru!2sru!4v1574773879136!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                    </div>
-                </div>
+    </aside>
+    <div class="container main-content">
+        <div class="main-content__museums">
+            <form action="" class="sort">
+                <label for="sort-result"><span class="sort__results">38</span>Results</label>
+                <select class="sort__select" name="sort-result">
+                    <option>Sort</option>
+                </select>
+            </form>
+            <ul class="museums-list">
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">NYC Museum of Art Tour with Skip-the-Line Access </p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-1.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">The Bronx Museum of the Arts Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-2.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">Brooklyn Museum of the Arts Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-3.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">American Folk Art Museum Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-4.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">The Frick Collection Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-5.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">Guggenheim Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-6.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">Hall of Science Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-7.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">The Intrepid Museum Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-8.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">Metropolitan Museum of Art Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-9.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">The Museum of Modern Art Admission with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-10.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">Morgan Library Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-11.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">The Museum of the Moving Image Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-12.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">Museum of Natural History Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-13.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">The New Museum Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+                <li class="museums-list__elem">
+                    <a href="#" class="museums-list__card">
+                        <img src="src/assest/images/Bitmap-14.png" alt="muesums-foto" class="museums-list__foto">
+                        <img src="src/assest/images/star.svg" alt="" class="rating">
+                        <p class="museums-list__desc">International Center of Photography Tour with Skip-the-Line Access</p>
+                        <p class="museums-list__price">from $26 per person</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content__map">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96674.66808259908!2d-74.00562575585037!3d40.78218109975981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2z0JzQsNC90YXRjdGC0YLQtdC9LCDQndGM0Y4t0JnQvtGA0LosINCh0KjQkA!5e0!3m2!1sru!2sru!4v1574773879136!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </div>
     </div>
 </main>
-<!--<script>
-// Initialize and add the map
-function initMap() {
-// The location of Uluru
-var uluru = {lat: 35.344, lng: 65.036};
-// The map, centered at Uluru
-var map = new google.maps.Map(
-  document.getElementById('map'), {zoom: 8, center: uluru});
-// The marker, positioned at Uluru
-var marker = new google.maps.Marker({position: uluru, map: map});
-}
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA__taP5nf2DoVzPGO8DxYu6j8_xGZbCAg&callback=initMap"
-type="text/javascript"></script>-->
+<footer>
+
+</footer>
 </body>
 </html>
