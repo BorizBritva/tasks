@@ -8,7 +8,6 @@
     <meta name="description" content="Sitys museums">
     <meta name="keywords" content="musems">
     <link rel="stylesheet" href="src//css/style.css">
-    <script type="text/javascript" src="src/script/script.js"></script>
 </head>
 <body>
 <header>
@@ -122,7 +121,20 @@
 </div>
 </header>
 <section class="slider">
-    <img class="slider__elem" src="src/assest/images/guggenheim.png" alt="">
+    <ul class="slider__list">
+        <li class="slider__elem">
+            <img class="slider__fone" src="src/assest/images/guggenheim.png" alt="">
+        </li>
+        <li class="slider__elem">
+            <img class="slider__fone" src="src/assest/images/slie-two.jpg" alt="">
+        </li>
+        <li class="slider__elem">
+            <img class="slider__fone" src="src/assest/images/metropolitan.jpg" alt="">
+        </li>
+        <li class="slider__elem">
+            <img class="slider__fone" src="src/assest/images/slide-four.jpg" alt="">
+        </li>
+    </ul>
     <button class="slider__button slider__button_prev" type="button" name="button">
         <img src="src/assest/images/chevron-right.svg" alt="prev">
     </button>
@@ -300,5 +312,29 @@
 <footer>
 
 </footer>
+<!--<div class="modal">
+    <form class="modal-form" action="" method="post">
+        <span class="modal-form__name">Filter</span>
+        <label class="modal-form__points">Subcategorie
+            <input type="checkbox" name="museums" checked>Art Museums
+            <input type="checkbox" name="museums" checked>History Museums
+            <input type="checkbox" name="museums" checked>Outdoor Museums
+        </label>
+        <label class="modal-form__points">Neighborhoods
+            <input type="checkbox" name="museums" checked>Flatiron
+            <input type="checkbox" name="museums" checked>Chelsea
+            <input type="checkbox" name="museums" checked>Financical District
+            <input type="checkbox" name="museums" checked>Upper East Side
+            <input type="checkbox" name="museums" checked>Upper West Side
+        </label>
+        <label class="modal-form__points">Duration
+            <input type="checkbox" name="museums" checked>Up to 1 Hour
+            <input type="checkbox" name="museums" checked>1-6 Hours
+            <input type="checkbox" name="museums" checked>4 Hours to 1 Day
+            <input type="checkbox" name="museums" checked>More then 1 Day
+        </label>
+    </form>
+</div>-->
 </body>
+<script type="text/javascript" src="src/script/script.js"></script>
 </html>
