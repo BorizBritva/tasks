@@ -6,6 +6,7 @@ var nextButton = slider.querySelector('.slider__button_next');
 var displayMap = document.querySelector('.button-map');
 var map = document.querySelector('.main-content__map');
 var museums = document.querySelector('.main-content__museums');
+var count = 1;
 
 displayMap.addEventListener('click', function() {
     if (this.innerText.toLowerCase() == "map") {
@@ -18,4 +19,29 @@ displayMap.addEventListener('click', function() {
         this.innerText = 'Map';
     }
 
+})
+
+prevButton.addEventListener('click', function() {
+
+    if (count == sliderElem.length) {
+        return;
+    }
+
+    var step = slider.offsetWidth;
+
+    sliderList.style.transform = `translateX(-${count*step}px)`;
+
+    count+=1;
+})
+
+nextButton.addEventListener('click', function() {
+    var step = slider.offsetWidth;
+
+    if (count==1) {
+        return;
+    }
+
+    sliderList.style.transform = `translateX(-${(count-1)*step - step}px)`;
+
+    count-=1;
 })
