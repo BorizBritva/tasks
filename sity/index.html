@@ -136,10 +136,10 @@
         </li>
     </ul>
     <button class="slider__button slider__button_prev" type="button" name="button">
-        <img src="src/assest/images/chevron-right.svg" alt="prev">
+        <img src="src/assest/images/chevron-right.svg" alt="prev" class="slider__arr">
     </button>
     <button class="slider__button slider__button_next" type="button" name="button">
-        <img src="src/assest/images/chevron-left.svg" alt="next">
+        <img src="src/assest/images/chevron-left.svg" alt="next" class="slider__arr">
     </button>
 </section>
 <main>
@@ -312,6 +312,38 @@
 <footer>
 
 </footer>
+<div class="modal">
+    <div class="modalform">
+        <span class="modalform__name">Filter</span>
+        <form action="">
+            <p><b>Subcategories</b></p>
+            <label for="subcat"  class="modalform__elem">
+                <input type="checkbox" name="subcat">Art Museums <br>
+                <input type="checkbox" name="subcat">History Museums <br>
+                <input type="checkbox" name="subcat">Outdoor Museums <br>
+            </label>
+            <p><b>Neighborhoods</b></p>
+            <label for="neighborhoods"  class="modalform__elem">
+                <input type="checkbox" name="subcat">Flatiron <br>
+                <input type="checkbox" name="subcat">Chelsea <br>
+                <input type="checkbox" name="subcat">Financical District <br>
+                <input type="checkbox" name="subcat">Upper East Side <br>
+                <input type="checkbox" name="subcat">Upper West Side <br>
+            </label>
+            <p><b>Duration</b></p>
+            <label for="duration"  class="modalform__elem ">
+                <input type="checkbox" name="subcat">Up to 1 Hour <br>
+                <input type="checkbox" name="subcat">1-6 Hours <br>
+                <input type="checkbox" name="subcat">4 Hours to 1 Day <br>
+                <input type="checkbox" name="subcat">More Then 1 Day <br>
+            </label>
+        </form>
+        <div class="modalform__button">
+            <button type="button" name="button" class="modalform__reset">Reset</button>
+            <button type="button" name="button" class="modalform__go">Go</button>
+        </div>
+    </div>
+</div>
 <!--<div class="modal">
     <form class="modal-form" action="" method="post">
         <span class="modal-form__name">Filter</span>
