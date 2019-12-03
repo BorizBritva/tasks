@@ -313,7 +313,37 @@
 
 </footer>
 <div class="modal">
-    <div class="modalform">
+    <form action="" class="modal-form">
+        <div class="modal-form__name"><p><b>Filter</b></p><img src="src/assest/images/filter-close.png" alt=""></div>
+        <label for="subcat" class="modal-form__elem">
+            <p class="modal-form__nameElem"><b>Subcategories</b></p>
+            <div class="modal-form__input">
+                <input type="checkbox" name="subcat">Art Museums <br>
+                <input type="checkbox" name="subcat">History Museums <br>
+                <input type="checkbox" name="subcat">Outdoor Museums <br>
+            </div>
+        </label>
+        <label for="subcat" class="modal-form__elem">
+            <p class="modal-form__nameElem"><b>Neighborhoods</b></p>
+            <div class="modal-form__input">
+                <input type="checkbox" name="subcat">Flatiron <br>
+                <input type="checkbox" name="subcat">Chelsea <br>
+                <input type="checkbox" name="subcat">Financical District <br>
+                <input type="checkbox" name="subcat">Upper East Side <br>
+                <input type="checkbox" name="subcat">Upper West Side <br>
+            </div>
+        </label>
+        <label for="subcat" class="modal-form__elem">
+            <p class="modal-form__nameElem"><b>Duration</b></p>
+            <div class="modal-form__input">
+                <input type="checkbox" name="subcat">Up to 1 Hour <br>
+                <input type="checkbox" name="subcat">1-6 Hours <br>
+                <input type="checkbox" name="subcat">4 Hours to 1 Day <br>
+                <input type="checkbox" name="subcat">More Then 1 Day <br>
+            </div>
+        </label>
+    </form>
+    <!--<div class="modalform">
         <span class="modalform__name">Filter</span>
         <form action="">
             <p><b>Subcategories</b></p>
@@ -342,31 +372,8 @@
             <button type="button" name="button" class="modalform__reset">Reset</button>
             <button type="button" name="button" class="modalform__go">Go</button>
         </div>
-    </div>
+    </div>-->
 </div>
-<!--<div class="modal">
-    <form class="modal-form" action="" method="post">
-        <span class="modal-form__name">Filter</span>
-        <label class="modal-form__points">Subcategorie
-            <input type="checkbox" name="museums" checked>Art Museums
-            <input type="checkbox" name="museums" checked>History Museums
-            <input type="checkbox" name="museums" checked>Outdoor Museums
-        </label>
-        <label class="modal-form__points">Neighborhoods
-            <input type="checkbox" name="museums" checked>Flatiron
-            <input type="checkbox" name="museums" checked>Chelsea
-            <input type="checkbox" name="museums" checked>Financical District
-            <input type="checkbox" name="museums" checked>Upper East Side
-            <input type="checkbox" name="museums" checked>Upper West Side
-        </label>
-        <label class="modal-form__points">Duration
-            <input type="checkbox" name="museums" checked>Up to 1 Hour
-            <input type="checkbox" name="museums" checked>1-6 Hours
-            <input type="checkbox" name="museums" checked>4 Hours to 1 Day
-            <input type="checkbox" name="museums" checked>More then 1 Day
-        </label>
-    </form>
-</div>-->
 </body>
 <script type="text/javascript" src="src/script/script.js"></script>
 </html>

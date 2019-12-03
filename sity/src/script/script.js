@@ -3,13 +3,29 @@ var sliderList = slider.querySelector('.slider__list');
 var sliderElem = slider.querySelectorAll('.slider__elem');
 var prevButton = slider.querySelector('.slider__button_prev');
 var nextButton = slider.querySelector('.slider__button_next');
-var filter = document.querySelector('.button-fil');
+var filterButton = document.querySelector('.button-fil');
+var filterClose = document.querySelector('.modal-form__name img');
 var displayMap = document.querySelector('.button-map');
 var map = document.querySelector('.main-content__map');
 var museums = document.querySelector('.main-content__museums');
 var burger = document.querySelector('.burger-menu img');
-var modal = document.querySelector('.modal');
+var filterElem = document.querySelectorAll('.modal-form__elem');
 var count = 1;
+
+filterButton.addEventListener('click', function() {
+    document.querySelector('.modal').classList.add('modal-active');
+})
+
+filterClose.addEventListener('click', function() {
+    document.querySelector('.modal').classList.remove('modal-active');
+})
+
+filterElem.forEach(function(item, index) {
+    item.addEventListener('click', function() {
+        this.querySelector('.modal-form__nameElem').classList.toggle('filter-active');
+        this.querySelector('.modal-form__input').classList.toggle('input-close');
+    })
+})
 
 displayMap.addEventListener('click', function() {
     if (this.innerText.toLowerCase() == "map") {
@@ -26,16 +42,6 @@ displayMap.addEventListener('click', function() {
 
 burger.addEventListener('click', function() {
   document.querySelector('.header-nav').classList.toggle("active");
-})
-
-filter.addEventListener('click', function() {
-  modal.style.display = "block";
-})
-
-modal.addEventListener('click', function(e) {
-  if (!e.target.classList.contains('modalform')) {
-    this.style.display = 'none';
-  }
 })
 
 slider.addEventListener('click', function(e) {
