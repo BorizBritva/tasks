@@ -407,6 +407,7 @@ li {
     position: absolute;
     right: 5.5px;
     top: calc(50% - 7px);
+    transform: rotate(90deg);
     transition: .3s ease;
 }
 .modal-form__elem {
@@ -492,7 +493,7 @@ li {
     display: block;
 }
 .filter-active::before {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
 .input-close {
     display: none;
