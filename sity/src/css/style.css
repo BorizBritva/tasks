@@ -390,9 +390,9 @@ li {
     position: relative;
     padding: 15px 0px;
 }
-.modal-form__nameElem::after, .modal-form__nameElem::before {
+.modal-form__nameElem::after {
     content: "";
-    width: 13px;
+    width: 14px;
     height: 4px;
     background-color: black;
     position: absolute;
@@ -400,12 +400,90 @@ li {
     top: calc(50% - 2px);
 }
 .modal-form__nameElem::before {
+    content: "";
+    height: 14px;
+    width: 4px;
+    background-color: black;
+    position: absolute;
+    right: 5.5px;
+    top: calc(50% - 7px);
     transition: .3s ease;
 }
 .modal-form__elem {
     position: relative;
     display: block;
-    padding: 0px 24px;
+    padding: 0px 12px;
+}
+.modal-form__button {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 12px;
+}
+.modal-form__button button {
+    width: 120px;
+    height: 48px;
+    border: 1px solid #0084BA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    font-family: 'Actor';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0084BA;
+}
+.modal-form__button .modal-form__go {
+    background-color: #0084BA;
+    color: #FFFFFF;
+}
+.modal-form__input input[type="checkbox"] {
+    display: none;
+}
+.modal-form__input label {
+    position: relative;
+    padding-left: 20px;
+}
+.modal-form__input label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 7px);
+    background: #FFFFFF;
+    border: 1px solid #D6E1E4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-right: 7px;
+    height: 17px;
+    width: 17px;
+}
+.modal-form__input label::after {
+    content: url('../assest/images/checked-input-ch.png');
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 7px);
+    background: #FFFFFF;
+    border: 1px solid #D6E1E4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-right: 7px;
+    height: 17px;
+    width: 17px;
+    /* background-color: #0098D7; */
+    background-image: url('../assest/images/checked-input.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.modal-form__input input[type="checkbox"]:checked+label::after {
+    opacity: 1;
 }
 .modal-form__input {
     height: auto;

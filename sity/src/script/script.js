@@ -13,18 +13,28 @@ var filterElem = document.querySelectorAll('.modal-form__elem');
 var count = 1;
 
 filterButton.addEventListener('click', function() {
+
     document.querySelector('.modal').classList.add('modal-active');
+
 })
 
 filterClose.addEventListener('click', function() {
+
     document.querySelector('.modal').classList.remove('modal-active');
+
 })
 
 filterElem.forEach(function(item, index) {
-    item.addEventListener('click', function() {
-        this.querySelector('.modal-form__nameElem').classList.toggle('filter-active');
-        this.querySelector('.modal-form__input').classList.toggle('input-close');
+
+    item.addEventListener('click', function(e) {
+
+        if (e.target.classList.contains('modal-form__nameElem')) {
+            this.querySelector('.modal-form__nameElem').classList.toggle('filter-active');
+            this.querySelector('.modal-form__input').classList.toggle('input-close');
+        }
+
     })
+
 })
 
 displayMap.addEventListener('click', function() {
