@@ -25,6 +25,7 @@ window.addEventListener('scroll', function() {
         document.querySelector('.container__museums-filter').classList.add('museums-filter__fix');
         map.style.top = `${topMap}px`;
         map.classList.add('map__fix');
+
         return;
 
       };
@@ -97,27 +98,3 @@ slider.addEventListener('click', function(e) {
   }
 
 })
-/*prevButton.addEventListener('click', function() {
-
-    if (count == sliderElem.length) {
-        return;
-    }
-
-    var step = slider.offsetWidth;
-
-    sliderList.style.transform = `translateX(-${count*step}px)`;
-
-    count+=1;
-})
-
-nextButton.addEventListener('click', function() {
-    var step = slider.offsetWidth;
-
-    if (count==1) {
-        return;
-    }
-
-    sliderList.style.transform = `translateX(-${(count-1)*step - step}px)`;
-
-    count-=1;
-})*/
