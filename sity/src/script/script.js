@@ -12,6 +12,23 @@ var burger = document.querySelector('.burger-menu img');
 var filterElem = document.querySelectorAll('.modal-form__elem');
 var count = 1;
 
+
+//container__museums-filter - отсюда получить отсуп для карты
+document.addEventListener('scroll', function() {
+
+  var startPoint = document.querySelector('.slider').offsetHeight + document.querySelector('header').offsetHeight;
+  var topMap = document.querySelector('.container__museums-filter').offsetHeight;
+
+
+    if (window.pageYOffset == startPoint) {
+
+      document.querySelector('.container__museums-filter').classList.toggle('museums-filter__fix');
+      map.style.top = `${topMap}px`;
+      map.classList.toggle('map__fix');
+
+    };
+})
+
 filterButton.addEventListener('click', function() {
 
     document.querySelector('.modal').classList.add('modal-active');

@@ -39,6 +39,9 @@ li {
     padding-left: 33px;
     padding-right: 67px;
 }
+.logo a {
+  display: flex;
+}
 .hfcl__elem-mob {
     padding-left: 28px;
     display: none;
@@ -226,6 +229,17 @@ li {
     border-bottom: 1px solid #E2E2E2;
     height: auto;
     position: relative;
+    background-color: #FFFFFF;
+}
+.museums-filter__fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.map__fix {
+  position: fixed;
+  right: 0;
 }
 .sort__results, .sort label {
     font-family: 'Source Sans Pro';
