@@ -14,25 +14,7 @@ var count = 1;
 
 
 //container__museums-filter - отсюда получить отсуп для карты
-/*document.addEventListener('scroll', function() {
-
-  var startPoint = document.querySelector('.slider').offsetHeight + document.querySelector('header').offsetHeight;
-  var topMap = document.querySelector('.container__museums-filter').offsetHeight;
-
-
-    if (window.pageYOffset >= startPoint ) {
-
-      document.querySelector('.container__museums-filter').classList.toggle('museums-filter__fix');
-      map.style.top = `${topMap}px`;
-      map.classList.toggle('map__fix');
-      return;
-
-    };
-
-    console.log(window.pageYOffset + '/n' + startPoint );
-})*/
-
-function scrollFix() {
+window.addEventListener('scroll', function() {
 
     var startPoint = document.querySelector('.slider').offsetHeight + document.querySelector('header').offsetHeight;
     var topMap = document.querySelector('.container__museums-filter').offsetHeight;
@@ -49,9 +31,7 @@ function scrollFix() {
 
       document.querySelector('.container__museums-filter').classList.remove('museums-filter__fix');
       map.classList.remove('map__fix');
-}
-
-window.addEventListener('scroll', scrollFix);
+})
 
 filterButton.addEventListener('click', function() {
 
