@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+
+html,
+body,
+ul,
+ol
+    margin:  0
+    padding: 0
+
+body
+    background-color: #2E2E2E
+
+li
+    list-style-type: none
+
+$fontFamily: Roboto
+$borderRadius: 16px
+
+=boxShadow($x, $y, $z, $color)
+    -webkit-box-shadow: $x $y $z $color
+    -moz-box-shadow: $x $y $z $color
+    -ms-box-shadow: $x $y $z $color
+    box-shadow: $x $y $z $color
+
+=background($x, $y, $z, $c)
+    background: rgba($x, $y, $z, $c)
+
+.container
+    position: relative
+    padding: 0px 300px
+    @media (max-width: 1200px)
+        padding: 0px 100px
+    @media (max-width: 1024px)
+        padding: 0px 60px
+
+
+.card, .clients-list li, .to-home__desc
+    border-radius: $borderRadius
+    background-color: #FFFFFF
+
+.logo-desc
+    font-family: $fontFamily
+    font-style: normal
+    font-weight: bold
+    font-size: 42px
+    color: #FFFFFF
+
+.header-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.fone-img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    z-index: -1
+
+.wrap-home, .clients-wrap
+    padding-top: 92px
+
+.home-card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    +boxShadow(4px, 4px, 10px, rgba(0, 0, 0, 0.25))
+    padding: 112px 0px
+    @media (max-width: 1024px)
+        padding: 50px 0px
+
+.home-card__desc, .to-home__desc
+    font-family: $fontFamily
+    font-style: normal
+    font-weight: bold
+    font-size: 42px
+    text-align: center
+    @media (max-width: 1024px)
+        font-size: 28px
+    @media (max-width: 600px)
+        font-size: 18px
+
+.home-card__desc
+    margin-bottom: 102px
+    @media (max-width: 1024px)
+        margin-bottom: 50px
+
+.home-card__button
+    background: #3E3E3E
+    border: none
+    border-radius: 64px
+    font-family: $fontFamily
+    font-style: normal
+    font-weight: 500
+    font-size: 42px
+    color: #FFFFFF
+    padding: 34px 62px
+    margin: auto
+    a
+        text-decoration: none
+        color: #FFFFFF
+    @media (max-width: 1024px)
+        font-size: 28px
+        padding: 18px 30px
+    @media (max-width: 600px)
+        font-size: 18px
+
+.to-home
+    position: relative
+    display: flex
+    align-items: center
+    margin-bottom: 51px
+
+.to-home__desc
+    padding: 36px 100px
+    @media (max-width: 1024px)
+        padding: 30px 50px
+    @media (max-width: 600px)
+        padding: 20px 20px
+
+.to-home__button
+    position: relative
+    margin-right: 32px
+    img
+        width: 100%
+    @media (max-width: 600px)
+        width: 50px
+
+.clients-list
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.clients-list li
+    width: calc(50% - 80px)
+    padding: 30px 30px
+    margin-bottom: 40px
+    @media (max-width: 600px)
+        width: calc(100% - 50px)
+
+.client__name span
+    font-weight: bold
+
+.type__name
+    padding-right: 15px
+    font-weight: bold
+
+
+.filter
+    padding: 10px 15px
+    +boxShadow(4px, 4px, 10px, rgba(0, 0, 0, 0.25))
+    border-radius: $borderRadius
+    background-color: #FFFFFF
+    margin-bottom: 20px
+    display: flex
+    justify-content: flex-end
+
+.filterOption
+    width: 10%
+
+.filterOption option
+    font-family: $fontFamily
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    color: #000000
