@@ -8,7 +8,7 @@ import './App.sass';
 const history = createBrowserHistory();
 
 
-const App = () => {
+/*const App = () => {
   return (
       <Fragment>
         <Router history={ history }>
@@ -22,4 +22,20 @@ const App = () => {
   );
 }
 
-export default App;
+export default App;*/
+
+export default class App extends React.Component {
+    render() {
+        return(
+            <Fragment>
+              <Router history={ history }>
+                <Header />
+                <Switch>
+                  <Route path="/" exact component={Home} />
+                  <Route path="/clients" exact component={Clients} />
+                </Switch>
+              </Router>
+           </Fragment>
+        )
+    }
+}
