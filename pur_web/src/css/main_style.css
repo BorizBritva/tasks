@@ -10,6 +10,7 @@ color: #2f1946;
 .container {
     max-width: 1270px;
     padding: 0px 15px;
+    margin: auto;
 }
 .header-wrap {
     position: relative;
@@ -44,6 +45,7 @@ color: #2f1946;
     border-radius: 30px;
     background-color: #e22028;
     margin-left: 15px;
+    cursor: pointer;
 }
 .menu__burger::after, .menu__burger::before {
     content: "";

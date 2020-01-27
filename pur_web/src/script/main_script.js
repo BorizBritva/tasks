@@ -53,7 +53,11 @@ rightButton.addEventListener('click', function() {
             counter+=1;
         } else {
             clearInterval(timer);
+
             counter = 0;
         }
     }, .5);
 })
+
+
+//test sublime_txt_3
