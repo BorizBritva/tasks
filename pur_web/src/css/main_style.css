@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+
+*
+{
+margin: 0px;
+padding: 0px;
+color: #2f1946;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0px 15px;
+}
+.header-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.header-wrap::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assest/img/block_one.png') left center no-repeat;
+    background-size: cover;
+    opacity: .5;
+    z-index: -1;
+}
+.menu {
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #2f1946;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+}
+.menu__burger {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #e22028;
+    margin-left: 15px;
+}
+.menu__burger::after, .menu__burger::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: inherit;
+    border-radius: 30px;
+}
+.menu__burger::after {
+    bottom: -10px;
+}
+.menu__burger::before {
+    top: -10px;
+}
+.header-logo {
+    padding-top: 112px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.site-name {
+    padding-top: 91px;
+    width: 100%;
+    color: #45124c;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+.get-start__button {
+    padding: 75px 0px;
+    display: flex;
+    justify-content: center;
+}
+.get-start__button button {
+    padding: 11px;
+    border-radius: 40px;
+    border: 2px solid #81398b;
+    cursor: pointer;
+}
+.name-button {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    background-color: #81398b;
+    color: #FFFFFF;
+    padding: 5px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    position: relative;
+}
+.name-button::after {
+    content: "";
+    background: url('../assest/img/arrow-pointing-to-right.png') center no-repeat;
+    width: 25px;
+    height: 25px;
+}
+.get-start__list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.get-start__list ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.get-start__list_elem {
+    position: relative;
+    list-style-type: none;
+    width: calc(33.3% - 40px);
+    height: auto;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.get-start__list_elem  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.elem-world {
+    background-color: #fe4a5d;
+}
+.elem-world .list-desc {
+    background-color: #e44254;
+}
+.elem-heart {
+    background-color: #e22028;
+}
+.elem-heart .list-desc {
+    background-color: #cb1d24;
+}
+.elem-wi-fi {
+    background-color: #ff6c00;
+}
+.elem-wi-fi .list-desc {
+    background-color: #e56100;
+}
+.list-desc {
+    position: absolute;
+    padding: 20px 0px;
+    bottom: -70px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+.block-two {
+    padding-top: 210px;
+}
+.preview__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preview__head_name {
+    width: 100%;
+    color: #45124c;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+.preview__head_name::before {
+    content: url("../assest/img/heart_logo.png");
+    padding-right: 15px;
+}
+.preview__head_desc {
+    position: relative;
+    width: 75%;
+    color: #45124c;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.preview__head_capt {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: #fe4a5d;
+    font-family: inherit;
+    font-size: 30px;
+}
+.slider-wrap {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    margin: 20px;
+    cursor: pointer;
+}
+.slider__border {
+    width: 50%;
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    height: 200px;
+    margin: auto;
+}
+.slider__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    list-style-type: none;
+    width: calc(30% - 20px);
+    height: 100%;
+    background-color: red;
+    padding: 0px 10px;
+}
